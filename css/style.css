@@ -992,7 +992,7 @@ body {
 		padding: 65px 0 80px;
 	}
 
-	.rests .grid {
+	.tests .grid {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(2, 1fr);
 		row-gap: 40px;
