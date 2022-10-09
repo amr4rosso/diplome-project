@@ -290,6 +290,13 @@ body {
 	z-index: 2;
 }
 
+.header-bg-grid {
+	position: absolute;
+	top: 0;
+	right: 155px;
+
+}
+
 /* --menu burger-- */
 
 .check {
@@ -901,7 +908,11 @@ body {
 
 	.header-image {
 		position: sticky;
+	}
 
+	.header-bg-grid {
+		top: 576px;
+		right: 373px;
 	}
 
 	.header-button {
@@ -996,6 +1007,7 @@ body {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(2, 1fr);
 		row-gap: 40px;
+		column-gap: 20px;
 	}
 
 	.card:nth-child(1) {
@@ -1191,6 +1203,11 @@ body {
 		max-width: 520px;
 	}
 
+	.header-bg-grid {
+		top: 663px;
+		right: 110px;
+	}
+
 	.skills-img {
 		max-width: 550px;
 	}
@@ -1271,6 +1288,11 @@ body {
 
 	.sponsored-icon {
 		margin-bottom: 30px;
+	}
+
+	.header-bg-grid {
+		top: 450px;
+		right: 0;
 	}
 
 
@@ -1446,6 +1468,11 @@ body {
 		max-width: 480px;
 	}
 
+	.header-bg-grid {
+		top: 530px;
+		right: -76px;
+	}
+
 	.tests-img {
 		max-width: 60px;
 	}
@@ -1536,6 +1563,10 @@ body {
 		max-width: 290px;
 	}
 
+	.header-bg-grid {
+		top: 530px;
+		right: -135px;
+	}
 
 	.footer .flex {
 		display: grid;
