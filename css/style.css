@@ -425,6 +425,28 @@ body {
 	
 }
 
+.work-cards .card:nth-child(1),
+.work-cards .card:nth-child(3),
+.work-cards .card:nth-child(2) {
+	position: relative;
+}
+
+.work-cards .card:nth-child(1)::after,
+.work-cards .card:nth-child(3)::after {
+	content: url('../img/work/arrow1.png');
+	position: absolute;
+	top: 0;
+	right: 15px;
+}
+
+.work-cards .card:nth-child(2)::after {
+	content: url('../img/work/arrow2.png');
+	position: absolute;
+	top: 25px;
+	right: 15px;
+}
+
+
 .work-cards .card-info{
 	max-width: 263px;
 }
@@ -480,13 +502,6 @@ body {
 	z-index: 0;
 }
 
-.arrow-work {
-	position: absolute;
-	top: 45%;
-	left: 43%;
-	transform: translate(-50%, -50%);
-	z-index: 0;
-}
 
 /* -----Feedback----- */
 
@@ -498,10 +513,10 @@ body {
 	margin-bottom: 76px;
 }
 
-.feedback-carousel{
+/* .feedback-carousel{
 	max-width: 422px;
 	margin: 0 auto;
-}
+} */
 
 .comments {
 	max-width: 368px;
@@ -821,7 +836,7 @@ body {
 	position: fixed;
 	margin-bottom: 300px;
 	background-color: rgba(0, 0, 0, 0.1);
-	top: 0;
+	top: 50px;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -1119,7 +1134,7 @@ body {
 	.work .grid {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(2, 1fr);
-		column-gap: 10px;
+		gap: 10px;
 	}
 
 	.work-cards .card:nth-child(1),
@@ -1132,7 +1147,7 @@ body {
 		grid-column: 2/3;
 	}
 
-	.arrow-work {
+	.work-cards .card.card:nth-child(2)::after{
 		display: none;
 	}
 
@@ -1257,6 +1272,12 @@ body {
 	.work-cards .card {
 		max-width: 210px;
 	}
+
+	.work-cards .card:nth-child(1)::after,
+	.work-cards .card:nth-child(3)::after {
+	top: -30px;
+	right: -60px;
+}
 
 	.secure-img {
 		max-width: 510px;
@@ -1423,12 +1444,21 @@ body {
 		margin-left: 70px;
 	}
 
-	.arrow-work {
+	.work-cards .card:nth-child(1)::after,
+	.work-cards .card:nth-child(3)::after {
+		transform: rotate(90deg);
+		top: 162px;
+		right: 206px;
+	}
+
+	.work-cards .card.card:nth-child(2)::after{
 		display: block;
 		transform: rotate(90deg);
-		top: 47%;
-		left: -61%;
+		top: 162px;
+		right: 206px;
 	}
+
+
 
 	/* -----Plan----- */
 
@@ -1567,7 +1597,23 @@ body {
 	}
 
 	.work-cards .card .card-info{
-		margin-left: 0;
+		/* margin-left: 0; */
+	}
+
+	.work-cards .card:nth-child(1)::after,
+	.work-cards .card:nth-child(3)::after {
+		content: url('../img/work/arrow1-small.png');
+		transform: rotate(90deg);
+		top: 133px;
+		right: 206px;
+	}
+
+	.work-cards .card.card:nth-child(2)::after{
+		content: url('../img/work/arrow2-small.png');
+		transform: rotate(90deg);
+		top: 133px;
+		right: 206px;
+		
 	}
 
 	.secure-img{
@@ -1607,6 +1653,17 @@ body {
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(4, 1fr);
 		column-gap: 20px;
+  }
+
+  .work-cards .card:nth-child(1)::after,
+  .work-cards .card:nth-child(3)::after {
+	  top: 133px;
+	  right: 174px;
+  }
+
+  .work-cards .card.card:nth-child(2)::after{
+	  top: 133px;
+	  right: 190px;
   }
 
   .footer-list:nth-child(1),
